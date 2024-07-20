@@ -1,0 +1,56 @@
+nav#nav li {
+    /* float: left; */
+    list-style-type: none;
+    margin: auto 1rem;
+}
+
+nav#nav ul a {
+    text-decoration: none;
+}
+
+nav#nav ul a:visited {
+    color: black;
+}
+
+nav#nav ul a:hover {
+    color: rgb(1, 71, 109);
+}
+
+nav#nav ul a:active {
+    color: rgb(1, 71, 109);
+}
+
+nav#nav ul a.current{
+    color: rgb(1, 71, 109);
+    font-weight: bold;
+}
+
+
+
+nav#nav ul a.loggedIn {
+    display: none;
+}
+
+nav#nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-self: center;
+    width: 60%;
+    padding: 0;
+}
+
+nav#nav {
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+nav#nav h1 {
+    color: rgb(1, 71, 109);
+    text-align: right;
+}
