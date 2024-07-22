@@ -32,7 +32,7 @@ function Login({ setProfile }) {
     return (
         <div id='login'>
             <form onSubmit={login} className='sign-in-form'>
-                <h1>Account Sign-In</h1>
+                <h1>Account Log-In</h1>
                 <p id='loginMessage'>
                     {response}
                 </p>

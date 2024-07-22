@@ -35,7 +35,7 @@ function Nav({ profile }) {
                 {liLink("Home", "", currentPage)}
                 {liLink("Contact Us", "Contact", currentPage)}
                 {liLink("About Us", "About", currentPage)}
-                {liLink("Sign-In", "Login", currentPage, loggedIn)}
+                {liLink("Log-In", "Login", currentPage, loggedIn)}
                 {liLink("Sign-Up", "Register", currentPage, loggedIn)}
             </ul>
             <h1>
