@@ -53,4 +53,17 @@ function Nav({ profile }) {
   );
 }
 
-export default Nav;
+function App() {
+  const profile = ''; // Define the profile variable or pass it as a prop to the App component
+
+  return (
+    <>
+      <Nav profile={profile} />
+      <section className="hero-section">
+        {/* Hero section content */}
+      </section>
+    </>
+  );
+}
+
+export default App;
