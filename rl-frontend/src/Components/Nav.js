@@ -25,7 +25,7 @@ function Nav({ profile }) {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="#">Running Logistics</Link>
+        <Link className="navbar-brand me-auto" to="#">Running Logistics</Link>
         <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Running Logistics</h5>
