@@ -1,17 +1,79 @@
-section#home {
-    /* background-image: url('../assets/lightBulbBg.webp');
-    height: 100%; */
-    display: flex;
-    flex-direction: column;
-}
+#home {
+    background: url('#') no-repeat center center;
+    background-size: cover;
+    /* min-height: 100vh; */
+    color: #fff;
 
-section#home h1 {
-    color: white;
+  }
+  
+  .services-section {
     text-align: center;
-    background-color: rgba(2, 83, 126, 0.9);
-    /* display: flex; */
-    margin: 15rem auto;
-    padding: 2rem 5rem;
-    font-size: 3rem;
-}
+    padding: 50px 20px;
+  }
+  
+  .services-section h2 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .service-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .service-text {
+    margin-top: 10px;
+  }
+  
+  .subscribe-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional for better readability */
+  }
+  
+  .subscribe-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .subscribe-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .subscribe-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009970;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #00b300;
+  }
+  
 
