@@ -11,16 +11,17 @@ function Home() {
         <h2>Services</h2>
         <div className='services-container'>
           <div className='service'>
-            <img src='#' alt='Service 1' className='service-image' />
-            <p className='service-text'>Service 1</p>
+            <img src={require('../assets/facilities.png')} alt='Service 1' className='service-image' />
+
+            <p className='service-text'>Facilities Support Services</p>
           </div>
           <div className='service'>
-            <img src='#' alt='Service 2' className='service-image' />
-            <p className='service-text'>Service 2</p>
+            <img src={require('../assets/capital.png')} alt='Service 2' className='service-image' />
+            <p className='service-text'>Human Capital Management</p>
           </div>
           <div className='service'>
-            <img src='#' alt='Service 3' className='service-image' />
-            <p className='service-text'>Service 3</p>
+            <img src={require('../assets/services.png')} alt='Service 3' className='service-image' />
+            <p className='service-text'>Temporary Help Services</p>
           </div>
         </div>
       </section>

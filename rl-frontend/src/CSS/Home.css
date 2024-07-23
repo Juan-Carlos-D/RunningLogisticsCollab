@@ -28,14 +28,15 @@
   }
   
   .service-image {
-    width: 100px;
-    height: 100px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
   }
   
   .service-text {
     margin-top: 10px;
+    color: black;
   }
   
   .subscribe-section {
