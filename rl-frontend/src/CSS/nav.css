@@ -101,6 +101,7 @@ nav#nav h1 {
 
 .nav-link:hover, .nav-link.active {
     color:#000;
+    font-weight: 700;
 }
 
 
@@ -156,7 +157,7 @@ nav#nav h1 {
 } */
 
 .hero-section {
-    background: url(../assets/runninglogisticsbg.jpg) no-repeat center;
+    background: url(../assets/office.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
 }
