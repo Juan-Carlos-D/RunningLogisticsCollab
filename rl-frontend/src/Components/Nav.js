@@ -32,7 +32,7 @@ function Nav({ profile }) {
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body">
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
               {liLink("Home", "", currentPage, loggedIn, "mx-lg-2")}
               {liLink("Contact Us", "Contact", currentPage, loggedIn, "mx-lg-2")}
               {liLink("About Us", "About", currentPage, loggedIn, "mx-lg-2")}
