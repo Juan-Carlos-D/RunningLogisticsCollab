@@ -52,16 +52,34 @@ nav#nav h1 {
     margin-right: 1rem; /* Add some spacing */
 }
 
-.nav-icon {
-    text-align: right;
-    margin-right: 1rem; /* Add some spacing */
-    font-size: 24px; /* Adjust size as needed */
+.ri-user-line {
+    background-color: #009970;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius:50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
 }
+/* nav.css */
 
-.nav-icon i {
-    color: #333; /* Adjust color as needed */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-}
+/* Remove the default underline from links */
+.navbar-nav .nav-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the color defined for the parent element or text color */
+  }
+  
+  /* Optional: Add custom styles for hover effect */
+  .navbar-nav .nav-link:hover {
+    text-decoration: none; /* Ensure underline is removed on hover */
+    color: #007bff; /* Example color for hover effect */
+  }
+  
+  /* Add any additional styles for the nav items if needed */
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Adjust margin for spacing */
+  }
+  
 
 /* Responsive adjustments if needed */
 @media (max-width: 768px) {

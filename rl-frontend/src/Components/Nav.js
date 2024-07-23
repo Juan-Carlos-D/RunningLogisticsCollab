@@ -9,13 +9,14 @@ const liLink = (word, hashURL, currentPage, loggedIn, linkClass = '') => {
   if (loggedIn === true) className += ' loggedIn';
   
   return (
-    <Link to={hashURL} className={`${className} ${linkClass}`}>
-      <li>
+    <Link to={hashURL} className={`${className} ${linkClass} nav-link`}>
+      <li className="nav-item">
         {word}
       </li>
     </Link>
   );
 };
+
 
 function Nav({ profile }) {
   const location = useLocation();
