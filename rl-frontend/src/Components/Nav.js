@@ -54,7 +54,7 @@ function Nav({ profile }) {
 }
 
 function App() {
-  const profile = ''; // Define the profile variable or pass it as a prop to the App component
+  const profile = '';
 
   return (
     <>

@@ -160,6 +160,8 @@ nav#nav h1 {
     background: url(../assets/office.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
+    position: relative; /* Make sure the pseudo-element is positioned relative to this */
+    overflow: hidden; /* Optional: Ensures any content within doesn't overflow */
 }
 
 .hero-section:before {
@@ -170,14 +172,16 @@ nav#nav h1 {
     right: 0;
     bottom: 0;
     left: 0;
-
+    z-index: 0; /* Make sure it is behind the text */
 }
 
+/* Make sure content in the hero section is on top of the overlay */
 .hero-section .container {
-    height: 100vh;
+    position: relative; /* Ensures content is above the ::before pseudo-element */
     z-index: 1;
-    position: relative;
+    height: 100vh; /* Adjust as needed */
 }
+
 
 .hero-section h1 {
     font-size: 1.5em; 
