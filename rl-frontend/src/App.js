@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //CSS
-// import './CSS/App.css';
+import './CSS/App.css';
 // import './CSS/AppDefault.css';
 // import './CSS/AppMedia.css';
 // import './CSS/AppXL.css';
@@ -21,15 +21,19 @@ function App() {
   const [profile, setProfile] = useState("");
 
   return (
-    <BrowserRouter>
-      <Header profile={profile} />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/Login" element={<Login setProfile={setProfile} />} />
-        <Route path="/Register" element={<Register setProfile={setProfile} />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className="app-container">
+      <BrowserRouter>
+        <Header profile={profile} />
+        <div className="content-wrapper">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Login" element={<Login setProfile={setProfile} />} />
+            <Route path="/Register" element={<Register setProfile={setProfile} />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
