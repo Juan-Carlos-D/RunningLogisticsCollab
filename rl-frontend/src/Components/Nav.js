@@ -41,6 +41,10 @@ function Nav({ profile }) {
             <h1>
                 {profile}
             </h1>
+            <div className="nav-icon">
+                <i className="ri-user-fill"></i>
+
+            </div>
         </nav>
     )
 }
