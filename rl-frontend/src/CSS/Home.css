@@ -42,8 +42,12 @@
   .subscribe-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional for better readability */
+    background: url('../assets/subscribe.jpg') no-repeat center center;
+    background-size: cover; /* This makes sure the image covers the section */
+    color: #fff; /* Ensure text is visible against the background */
+    border-radius: 8px; /* Optional: adds rounded corners */
   }
+  
   
   .subscribe-section h2 {
     font-size: 2.5em;
