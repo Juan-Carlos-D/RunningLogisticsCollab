@@ -1,6 +1,6 @@
 section#home {
-    background-image: url('../assets/lightBulbBg.webp');
-    height: 100%;
+    /* background-image: url('../assets/lightBulbBg.webp');
+    height: 100%; */
     display: flex;
     flex-direction: column;
 }
