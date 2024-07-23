@@ -80,12 +80,29 @@ nav#nav h1 {
 .nav-link {
     color: #666777;
     font-weight: 500;
+    position: relative;
 }
 
 .nav-link:hover, .nav-link:active {
     color:#000;
 }
 
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00b300;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    
+}
 
 
 /* .navbar-nav .nav-link {
