@@ -53,7 +53,7 @@ nav#nav h1 {
 } */
 
 .navbar {
-    background-color: #fff;
+    background-color: #f7d089;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
@@ -155,13 +155,13 @@ nav#nav h1 {
         display: none; 
     }
 } */
-
+/* 
 .hero-section {
     background: url(../assets/office.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    position: relative; /* Make sure the pseudo-element is positioned relative to this */
-    overflow: hidden; /* Optional: Ensures any content within doesn't overflow */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .hero-section:before {
@@ -172,14 +172,14 @@ nav#nav h1 {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0; /* Make sure it is behind the text */
+    z-index: 0; 
 }
 
-/* Make sure content in the hero section is on top of the overlay */
+
 .hero-section .container {
-    position: relative; /* Ensures content is above the ::before pseudo-element */
+    position: relative; 
     z-index: 1;
-    height: 100vh; /* Adjust as needed */
+    height: 100vh; 
 }
 
 
@@ -189,4 +189,4 @@ nav#nav h1 {
 
 .hero-section h2 {
     font-size: 1.2em;
-}
+} */
