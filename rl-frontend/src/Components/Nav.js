@@ -25,7 +25,7 @@ function Nav({ profile }) {
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
-      <div className="container-fluid">
+      <div className="container"> 
         <Link className="navbar-brand me-auto" to="#">Running Logistics</Link>
         <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div className="offcanvas-header">
@@ -60,10 +60,15 @@ function App() {
     <>
       <Nav profile={profile} />
       <section className="hero-section">
-        {/* Hero section content */}
+        <div className="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+          <h1>Responsive NavBar</h1>
+          <h2>Bootstrap 5</h2>
+        </div>
       </section>
     </>
   );
 }
 
 export default App;
+
+//container-fluid in above div to make it spaced out
