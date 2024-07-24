@@ -43,7 +43,7 @@ function Login({ setProfile }) {
                                 type="email"
                                 id="email"
                                 className="login__input"
-                                placeholder="Write your email"
+                                placeholder="Enter your email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required

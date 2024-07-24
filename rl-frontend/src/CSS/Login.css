@@ -98,7 +98,12 @@ input[type="email"], input[type="password"] {
     font-size: 20px;
     border: none;
     outline: none;
-    background: #45f3ff;
+    background: transparent;
+    padding: 20px 10px 10px; 
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }
 
 button[type="submit"]{
@@ -112,6 +117,22 @@ button[type="submit"]{
     width: 60%;
     border-radius: 90px;
     font-weight: 600;
+}
+
+button[type="submit"]:active {
+    background: linear-gradient(90deg, #45f3ff, #027878);
+    opacity: 0.8;
+}
+
+
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+    position: absolute; 
+    left: 0;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }
 
 /* .login__form {
