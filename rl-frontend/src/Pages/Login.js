@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import axiosInstance from '../Config/axiosCommon'
+import React, { useState } from 'react';
+import axiosInstance from '../Config/axiosCommon';
 
-//CSS
-import '../CSS/Login.css'
+// CSS
+import '../CSS/Login.css';
 
 function Login({ setProfile }) {
-
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const [response, setResponse] = useState("Sign in to your account to access your profile, history, and any private pages you've been granted access to.");
 
@@ -15,29 +14,28 @@ function Login({ setProfile }) {
         event.preventDefault();
 
         axiosInstance.post('auth/login', {
-            "email": email,
-            "password": password
+            email: email,
+            password: password
         })
             .then(res => {
                 const { name_first, name_last } = res.data;
-                setResponse("Success!  Welcome " + name_first + " " + name_last + ".")
-                setProfile(name_first)
+                setResponse("Success! Welcome " + name_first + " " + name_last + ".");
+                setProfile(name_first);
             })
             .catch(error => {
-                console.error('Error sending data:', error)
-                setResponse("Login failed. Please check your email and password.")
-            })
-    }
+                console.error('Error sending data:', error);
+                setResponse("Login failed. Please check your email and password.");
+            });
+    };
 
     return (
         <section className="login-section">
             <div className="login-content">
-
                 <form onSubmit={login} className="login__form">
                     <h2>Account Log-In</h2>
                     <p>Please log in using the form below:</p>
                     <div className="login__group">
-                        <div>
+                        <div className="input-container">
                             <label htmlFor="email" className="login__label">Email</label>
                             <input
                                 type="email"
@@ -48,8 +46,9 @@ function Login({ setProfile }) {
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
+                            <i></i>
                         </div>
-                        <div>
+                        <div className="input-container">
                             <label htmlFor="password" className="login__label">Password</label>
                             <input
                                 type="password"
@@ -60,6 +59,7 @@ function Login({ setProfile }) {
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
                             />
+                            <i></i>
                         </div>
                     </div>
                     <p className="login__message">{response}</p>
@@ -71,7 +71,6 @@ function Login({ setProfile }) {
                         <a href="#" className="login__forgot">
                             Forgot your password?
                         </a>
-                        
                     </div>
                 </form>
             </div>
