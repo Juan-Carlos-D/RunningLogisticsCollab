@@ -7,6 +7,7 @@
   position: relative; /* Changed from fixed to relative */
   bottom: 0; /* You can remove this line if not needed */
   left: 0; /* You can remove this line if not needed */
+  height:150px;
 }
 
 .footer-content {

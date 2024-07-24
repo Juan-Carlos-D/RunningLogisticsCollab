@@ -25,40 +25,56 @@ function Login({ setProfile }) {
             })
             .catch(error => {
                 console.error('Error sending data:', error)
-                setResponse(false)
+                setResponse("Login failed. Please check your email and password.")
             })
     }
 
     return (
-        <div id='login'>
-            <form onSubmit={login} className='sign-in-form'>
-                <h1>Account Log-In</h1>
-                <p id='loginMessage'>
-                    {response}
-                </p>
-                <div className='form-group'>
-                    <input
-                        type='text'
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        placeholder='Email'
-                    />
-                </div>
-                <div className='form-group'>
-                    <input
-                        type='password'
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                        placeholder='Password'
-                    />
-                </div>
-                <button type='submit'>Submit</button>
-            </form>
-        </div>
-
-    )
+        <section className="login-section">
+            <div className="login-content">
+                <h2>Account Log-In</h2>
+                <p>Please log in using the form below:</p>
+                <form onSubmit={login} className="login__form">
+                    <div className="login__group">
+                        <div>
+                            <label htmlFor="email" className="login__label">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                className="login__input"
+                                placeholder="Write your email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="password" className="login__label">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                className="login__input"
+                                placeholder="Enter your password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </div>
+                    </div>
+                    <p className="login__message">{response}</p>
+                    <div>
+                        <p className="login__signup">
+                            Don't have an account? <a href="#">Sign up</a>
+                        </p>
+                        <a href="#" className="login__forgot">
+                            Forgot your password?
+                        </a>
+                        <button type="submit" className="login__button">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    );
 }
 
-export default Login
+export default Login;
