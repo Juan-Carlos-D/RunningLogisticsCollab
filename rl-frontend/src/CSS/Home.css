@@ -6,9 +6,8 @@
 
 
 .intro-section {
-  background: url('../assets/lightBulbBg.webp') no-repeat center center;
+  background: url('../assets/logistics_img.jpg') no-repeat center center;
   background-size: cover; /* Ensure the image covers the section */
-
   padding: 150px 20px; /* Adjust padding as needed */
   text-align: center;
   color: white;
