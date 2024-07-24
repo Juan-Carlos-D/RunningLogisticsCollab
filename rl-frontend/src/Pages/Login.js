@@ -32,9 +32,10 @@ function Login({ setProfile }) {
     return (
         <section className="login-section">
             <div className="login-content">
-                <h2>Account Log-In</h2>
-                <p>Please log in using the form below:</p>
+
                 <form onSubmit={login} className="login__form">
+                    <h2>Account Log-In</h2>
+                    <p>Please log in using the form below:</p>
                     <div className="login__group">
                         <div>
                             <label htmlFor="email" className="login__label">Email</label>
