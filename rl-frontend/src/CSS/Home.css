@@ -73,9 +73,10 @@
 .subscribe-section {
   text-align: center;
   padding: 50px 20px;
-  background: url('../assets/subscribe.jpg') no-repeat center center;
+  background: url('../assets/typing.jpg') no-repeat center center;
   background-size: cover; 
   color: #fff; /* Ensure text is visible against the background */
+  height: 300px; /*optional*/
 }
 
 .subscribe-section h2 {
