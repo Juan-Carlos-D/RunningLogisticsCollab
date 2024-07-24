@@ -64,13 +64,14 @@ function Login({ setProfile }) {
                     </div>
                     <p className="login__message">{response}</p>
                     <div>
+                        <button type="submit" className="login__button">Log In</button>
                         <p className="login__signup">
                             Don't have an account? <a href="#">Sign up</a>
                         </p>
                         <a href="#" className="login__forgot">
                             Forgot your password?
                         </a>
-                        <button type="submit" className="login__button">Log In</button>
+                        
                     </div>
                 </form>
             </div>

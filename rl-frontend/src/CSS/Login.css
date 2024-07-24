@@ -68,7 +68,7 @@
     100% { transform: rotate(360deg); }
 }
 
-h2 {
+.login__form h2 {
     color: #45f3ff;
     font-size: 35px;
     font-weight: 500;
@@ -98,6 +98,20 @@ input[type="email"], input[type="password"] {
     font-size: 20px;
     border: none;
     outline: none;
+    background: #45f3ff;
+}
+
+button[type="submit"]{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 90px;
+    font-weight: 600;
 }
 
 /* .login__form {
