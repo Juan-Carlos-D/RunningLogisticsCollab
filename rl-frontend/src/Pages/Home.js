@@ -1,18 +1,22 @@
-import React from 'react'
-
-//CSS
-import '../CSS/Home.css'
+import React from 'react';
+import '../CSS/Home.css';
 
 function Home() {
   return (
     <div id='home'>
+      {/* Intro Section */}
+      <section className='intro-section'>
+        <div className='intro-content'>
+          <h1>Running Logistics</h1>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className='services-section'>
         <h2>Services</h2>
         <div className='services-container'>
           <div className='service'>
             <img src={require('../assets/facilities.png')} alt='Service 1' className='service-image' />
-
             <p className='service-text'>Facilities Support Services</p>
           </div>
           <div className='service'>
@@ -38,4 +42,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;

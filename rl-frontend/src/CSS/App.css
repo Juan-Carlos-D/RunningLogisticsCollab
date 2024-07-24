@@ -1,31 +1,27 @@
 /* App.css */
 
 html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  /* .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; 
-  } */
-  
-  .content-wrapper {
-    position: relative;
-    z-index: 1;
-    /* padding: 20px; */
-    color: white; 
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1; /* This will take up the remaining space and push the footer to the bottom */
+
+  color: white; /* Ensure text color is readable */
+}
+
+#footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  width: 100%;
+}

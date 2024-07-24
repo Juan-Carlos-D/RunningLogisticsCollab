@@ -1,133 +1,151 @@
 #home {
-    /* background: url('#') no-repeat center center;
-    background-size: cover; */
-    /* min-height: 100vh; */
+  /* background: url('../assets/office.jpg') no-repeat center center;
+  background-size: cover; */
+  /* min-height: 100vh; */
+}
 
 
-  }
-  
-  .services-section {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .services-section h2 {
-    color: black;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .services-container {
-    display: flex;
-    flex-direction: row; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 30px; /* Space between items */
-    width: 100%; /* Ensure container takes full width */
-    max-width: 1200px; /* Limit container width if needed */
-    margin: 0 auto; /* Center container horizontally */
-    padding: 0 20px; /* Padding inside the container */
-    box-sizing: border-box; /* Include padding in the width */
-  }
-  
-  .service {
-    text-align: center;
-    max-width: 100%; /* Ensure service does not exceed container width */
-  }
-  
-  .service-image {
-    width: 100%; /* Ensure image scales with its container */
-    max-width: 350px; /* Constrain maximum width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 350px; /* Limit height to avoid excessive growth */
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .service-text {
-    margin-top: 10px;
-    color: black;
-  }
-  
-  .subscribe-section {
-    text-align: center;
-    padding: 50px 20px;
-    background: url('../assets/subscribe.jpg') no-repeat center center;
-    background-size: cover; /* This makes sure the image covers the section */
-    color: #fff; /* Ensure text is visible against the background */
-  }
-  
-  
-  .subscribe-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .subscribe-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .subscribe-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .subscribe-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #009970;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  .subscribe-button:hover {
-    background-color: #00b300;
-  }
+.intro-section {
+  background: url('../assets/lightBulbBg.webp') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the section */
+
+  padding: 150px 20px; /* Adjust padding as needed */
+  text-align: center;
+  color: white;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1; /* Ensure the section is below the navbar */
+}
+
+.intro-content h1 {
+  font-size: 4em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); /* Add background color with opacity for better text visibility */
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+}
 
 
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: url('../assets/runninglogisticsbg.jpg') no-repeat center center;
+  background-size: cover; */
+}
 
+.services-section h2 {
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 30px; /* Space between items */
+  width: 100%; /* Ensure container takes full width */
+  max-width: 1200px; /* Limit container width if needed */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 20px; /* Padding inside the container */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.service {
+  text-align: center;
+  max-width: 100%; /* Ensure service does not exceed container width */
+}
+
+.service-image {
+  width: 100%; /* Ensure image scales with its container */
+  max-width: 350px; /* Constrain maximum width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 350px; /* Limit height to avoid excessive growth */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.service-text {
+  margin-top: 10px;
+  color: black;
+}
+
+.subscribe-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('../assets/subscribe.jpg') no-repeat center center;
+  background-size: cover; 
+  color: #fff; /* Ensure text is visible against the background */
+}
+
+.subscribe-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009970;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #00b300;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .services-container {
-      flex-direction: column;
-    }
-  
-    .service {
-      margin-bottom: 20px; /* Adds spacing between stacked services */
-    }
-    
-    .subscribe-section {
-      padding: 30px 15px; /* Adjust padding for smaller screens */
-    }
-    
-    .subscribe-section h2 {
-      font-size: 2em;
-    }
-  
-    .subscribe-form {
-      flex-direction: column;
-      gap: 10px;
-    }
+  .services-container {
+    flex-direction: column;
   }
+
+  .service {
+    margin-bottom: 20px; /* Adds spacing between stacked services */
+  }
+
+  .subscribe-section {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .subscribe-section h2 {
+    font-size: 2em;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 /* Adjustments for screens between 768px and 1092px */
 @media (min-width: 768px) and (max-width: 1092px) {
-    .services-container {
-      flex-direction: column;
-      gap: 30px; /* Adjusted space between items */
-    }
-    
-    .service {
-      max-width: 100%; /* Ensure each service takes full width in column layout */
-    }
-    
-    .subscribe-section {
-      padding: 40px 20px; /* Adjust padding for medium-sized screens */
-    }
+  .services-container {
+    flex-direction: column;
+    gap: 30px; /* Adjusted space between items */
   }
+
+  .service {
+    max-width: 100%; /* Ensure each service takes full width in column layout */
+  }
+
+  .subscribe-section {
+    padding: 40px 20px; /* Adjust padding for medium-sized screens */
+  }
+}

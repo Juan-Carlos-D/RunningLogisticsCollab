@@ -53,11 +53,12 @@ nav#nav h1 {
 } */
 
 .navbar {
-    background-color: #f7d089;
+    background-color: rgba(73, 81, 92, 0.7);
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -94,7 +95,7 @@ nav#nav h1 {
 }
 
 .nav-link {
-    color: #666777;
+    color: #009970;
     font-weight: 500;
     position: relative;
 }
