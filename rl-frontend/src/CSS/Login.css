@@ -193,7 +193,6 @@ input[type="password"]::placeholder {
 
 .login__signup a {
     color: #45f3ff;
-    font-size: 1em;
     text-decoration: none;
     font-weight: 700;
 }
@@ -202,35 +201,13 @@ input[type="password"]::placeholder {
     text-decoration: underline;
 }
 
-/* 
-
-.login__signup a:hover {
-    text-decoration: underline;
-}
-
 .login__forgot {
-    display: block;
-    font-size: 14px;
-    color: #009970;
+    color: #45f3ff;
     text-decoration: none;
     margin-top: 10px;
+    font-size: 1.2em;
 }
 
 .login__forgot:hover {
     text-decoration: underline;
 }
-
-.login__button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #009970;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login__button:hover {
-    background-color: #007f5f;
-}   */
