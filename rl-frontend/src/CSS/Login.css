@@ -174,8 +174,16 @@ input[type="password"]::placeholder {
     color: #45f3ff;
 }
 
+.input-container label {
+    font-size: 1.2em;
+    color:  #45f3ff;
+    margin: 0;
+} 
 
-
+.login__message {
+    color: #fff;
+    font-size: 1em;
+}
 
 /* .login__form {
     display: flex;
@@ -189,10 +197,10 @@ input[type="password"]::placeholder {
     gap: 20px;
 } */
 
-/* .login__label {
+ .login__label {
     font-size: 14px;
     color: #333;
-} */
+} 
 
 /* .login__input {
     width: 100%;
