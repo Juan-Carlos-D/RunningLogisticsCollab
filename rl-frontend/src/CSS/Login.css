@@ -211,3 +211,56 @@ input[type="password"]::placeholder {
 .login__forgot:hover {
     text-decoration: underline;
 }
+
+
+/* For tablets and smaller screens (768px and below) */
+@media (max-width: 768px) {
+    .login-content {
+        width: 90%;
+        padding: 20px;
+
+    }
+
+    .login-section form {
+        padding: 20px;
+    }
+
+    .login__form h2 {
+        font-size: 28px;
+    }
+
+    .login__input, input[type="email"], input[type="password"] {
+        font-size: 16px;
+    }
+
+    .login__form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .login-content {
+        width: 90%;
+        padding: 15px;
+        margin: 120px 0 50px 0;
+    }
+
+    .login-section form {
+        padding: 15px;
+    }
+
+    .login__form h2 {
+        font-size: 24px;
+    }
+
+    .login__input, input[type="email"], input[type="password"] {
+        font-size: 14px;
+    }
+
+    .login__form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
