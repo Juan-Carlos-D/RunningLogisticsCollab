@@ -107,7 +107,7 @@ input[type="email"], input[type="password"] {
     transition: 0.5s;
 }
 
-button[type="submit"]{
+.login__form button[type="submit"]{
     font-size: 20px;
     border: none;
     outline: none;
@@ -120,7 +120,7 @@ button[type="submit"]{
     font-weight: 600;
 }
 
-button[type="submit"]:active {
+.login__form button[type="submit"]:active {
     background: linear-gradient(90deg, #45f3ff, #027878);
     opacity: 0.8;
 }
